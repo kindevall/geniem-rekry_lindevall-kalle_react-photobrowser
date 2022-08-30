@@ -12,7 +12,7 @@ export const ImageDetails = (): JSX.Element => {
   const navigate = useNavigate()
 
   useEffect(() => {
-    function handleEscapeKey (event: KeyboardEvent) {
+    const handleEscapeKey = (event: KeyboardEvent) => {
       if (event.code === 'Escape') {
         navigate('/')
       }
