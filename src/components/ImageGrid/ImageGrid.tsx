@@ -1,11 +1,10 @@
 import { useAppSelector } from '../../state/hooks'
 import { JsonData } from '../../state/slices/imagesSlice'
 import { Link } from 'react-router-dom'
-import AnimateComponents from '../AnimateComponents'
+import { AnimateComponents } from '../AnimateComponents'
 import './ImageGrid.css'
 
-// The main grid view of the images.
-const ImageGrid = () => {
+export const ImageGrid = (): JSX.Element => {
   const images = useAppSelector(state => state.images)
 
   return (
@@ -25,5 +24,3 @@ const ImageGrid = () => {
     </AnimateComponents>
   )
 }
-
-export default ImageGrid

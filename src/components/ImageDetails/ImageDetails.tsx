@@ -3,15 +3,13 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { JsonData } from '../../state/slices/imagesSlice'
 import HighlightOffIcon from '@mui/icons-material/HighlightOff'
 import { IconButton } from '@mui/material'
-import AnimateComponents from '../AnimateComponents'
+import { AnimateComponents } from '../AnimateComponents'
 
-// Detailed view for a single image, including the title.
-const ImageDetails = () => {
+export const ImageDetails = (): JSX.Element => {
   const location = useLocation()
   const imageState = location.state as JsonData
   const navigate = useNavigate()
 
-  // Enables the user to close the image by pressing the Esc-key.
   useEffect(() => {
     function handleEscapeKey (event: KeyboardEvent) {
       if (event.code === 'Escape') {
@@ -29,12 +27,10 @@ const ImageDetails = () => {
       <div>
         <Link to='/'>
           <IconButton aria-label='close' size='large'>
-            <HighlightOffIcon  fontSize="inherit" />
+            <HighlightOffIcon fontSize='inherit' />
           </IconButton>
         </Link>
       </div>
     </AnimateComponents>
   )
 }
-
-export default ImageDetails

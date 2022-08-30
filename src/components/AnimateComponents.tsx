@@ -11,8 +11,7 @@ const animations = {
   exit: { opacity: 0, y: 100 }
 }
 
-// Animates component transitions
-const AnimateComponents = ({ children }: Props) => {
+export const AnimateComponents = ({ children }: Props): JSX.Element => {
   return (
     <motion.div
       variants={animations}
@@ -24,5 +23,3 @@ const AnimateComponents = ({ children }: Props) => {
     </motion.div>
   )
 }
-
-export default AnimateComponents
