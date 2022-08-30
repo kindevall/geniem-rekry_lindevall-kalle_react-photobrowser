@@ -1,0 +1,10 @@
+.fullSize {
+  width: 30rem;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .fullSize  {
+    width: 15rem;
+  }
+}

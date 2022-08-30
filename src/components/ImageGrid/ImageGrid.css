@@ -1,21 +1,27 @@
 .imgGrid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  padding: 0 3rem;
+  gap: 1rem;
+  padding: 0 1.5rem;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
 }
 
 .imgGrid .single {
-  width: 150px;
   cursor: pointer;
 }
 
 .imgGrid .single img {
+  width: 9rem;
   max-width: 100%;
   transition: all 0.15s ease-in-out;
+}
+
+@media only screen and (max-width: 900px) {
+  .imgGrid .single img  {
+    width: 4rem;
+  }
 }
 
 .imgGrid .single img:hover {

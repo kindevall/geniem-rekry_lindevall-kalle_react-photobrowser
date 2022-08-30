@@ -4,6 +4,7 @@ import { JsonData } from '../../state/slices/imagesSlice'
 import HighlightOffIcon from '@mui/icons-material/HighlightOff'
 import { IconButton } from '@mui/material'
 import { AnimateComponents } from '../AnimateComponents'
+import './ImageDetails.css'
 
 export const ImageDetails = (): JSX.Element => {
   const location = useLocation()
@@ -23,7 +24,7 @@ export const ImageDetails = (): JSX.Element => {
   return (
     <AnimateComponents>
       <h2>{imageState.title}</h2>
-      <img src={imageState.url} alt={imageState.url} />
+      <img className='fullSize' src={imageState.url} alt={imageState.url} />
       <div>
         <Link to='/'>
           <IconButton aria-label='close' size='large'>
