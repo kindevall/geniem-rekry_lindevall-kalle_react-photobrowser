@@ -18,6 +18,6 @@ Prequisites:
 
 You can download the repository either with Git bash with the command `git clone https://github.com/kindevall/geniem-rekry_lindevall-kalle_react-photobrowser.git` or by downloading the repository as a zip file and unpacking it.
 
-Access the downloaded repository with a terminal (e.g. right-click inside the folder and select *Open in terminal/command prompt*) , install the required dependencies with the command `npm i` and after that run the program with `npm start`.
+Access the downloaded repository with a terminal (e.g. right-click inside the folder and select *Open in terminal/command prompt*) , install the required dependencies with the command `npm i` (or `npm i --legacy-peer-deps` if you get errors) and after that run the program with `npm start`.
 
 The program should open in a new browser tab/window in the address http://localhost:3000/.
