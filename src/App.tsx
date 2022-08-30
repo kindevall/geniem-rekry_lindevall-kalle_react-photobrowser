@@ -1,7 +1,7 @@
 /**
  * React Photobrowser
  *
- * @version 1.0.0
+ * @version 1.0.1
  * @author [Kalle Lindevall] (https://github.com/kindevall)
  */
 
