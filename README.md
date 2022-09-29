@@ -1,5 +1,5 @@
 # React Photobrowser
-### Created for a Geniem recruitment task
+### Created for a Geniem recruitment task. The task subject and the image API were part of the instructions.
 ### [Online demo available here!](https://geniem-react-photobrowser.herokuapp.com/)
 
 ---
